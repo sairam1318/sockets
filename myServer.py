@@ -2,9 +2,10 @@ import socket
 
 sc = socket.socket()
 
-# host = socket.gethostname()
+host = '165.22.14.77'
+port = 9999
 
-sc.bind(('DESKTOP-5TG645N', 11111))
+sc.bind((host, port))
 
 sc.listen(2)
 
